@@ -1,0 +1,71 @@
+# Builds NEXA as static files and publishes them on GitHub Pages, on every push to main.
+# One-time setup in the repository: Settings, Pages, Source: GitHub Actions.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Check
+        run: npm run typecheck && npm run lint && npm run test
+
+      # A user or organisation site (<owner>.github.io) lives at the root; a project site
+      # lives under /<repository>.
+      - name: Work out the base path
+        id: base
+        shell: bash
+        run: |
+          owner="${GITHUB_REPOSITORY_OWNER,,}"
+          repo="${GITHUB_REPOSITORY#*/}"
+          if [ "${repo,,}" = "${owner}.github.io" ]; then
+            echo "path=" >> "$GITHUB_OUTPUT"
+            echo "url=https://${owner}.github.io" >> "$GITHUB_OUTPUT"
+          else
+            echo "path=/${repo}" >> "$GITHUB_OUTPUT"
+            echo "url=https://${owner}.github.io/${repo}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build
+        run: npm run build:pages
+        env:
+          BASE_PATH: ${{ steps.base.outputs.path }}
+          NEXT_PUBLIC_SITE_URL: ${{ steps.base.outputs.url }}
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

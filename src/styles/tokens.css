@@ -1,0 +1,147 @@
+/*
+ * NEXA design tokens. Every colour on screen comes from here.
+ * A palette sets a hue, a tint strength and an accent. Neutrals are derived from them, so a
+ * palette reads as one material and not as an accent pasted on grey.
+ */
+:root {
+  color-scheme: dark;
+
+  /* Gold is the default: warm stone neutrals with a gold accent. */
+  --hue: 75;
+  --tint: 0.006;
+  --accent-dark: oklch(0.82 0.125 80);
+  --accent-light: oklch(0.5 0.105 75);
+
+  --background: oklch(0.185 var(--tint) var(--hue));
+  --background-deep: oklch(0.155 var(--tint) var(--hue));
+  --surface: oklch(0.225 var(--tint) var(--hue));
+  --surface-hover: oklch(0.27 var(--tint) var(--hue));
+  --surface-raised: oklch(0.245 var(--tint) var(--hue));
+  --foreground: oklch(0.955 var(--tint) var(--hue));
+  --muted: oklch(0.77 calc(var(--tint) * 1.6) var(--hue));
+  --faint: oklch(0.66 calc(var(--tint) * 1.6) var(--hue));
+  --border: oklch(0.3 var(--tint) var(--hue));
+  --border-strong: oklch(0.42 calc(var(--tint) * 1.3) var(--hue));
+
+  --accent: var(--accent-dark);
+  --accent-soft: color-mix(in oklab, var(--accent) 15%, transparent);
+  --on-accent: oklch(0.19 0.012 var(--hue));
+  --primary: var(--accent);
+  --primary-hover: color-mix(in oklab, var(--accent) 86%, white);
+  --on-primary: var(--on-accent);
+
+  --danger: oklch(0.72 0.17 25);
+  --danger-soft: color-mix(in oklab, var(--danger) 13%, transparent);
+  --success: oklch(0.8 0.14 158);
+  --warning: oklch(0.78 0.15 52);
+
+  --overlay: oklch(0.1 0 0 / 0.66);
+  --shadow-float: 0 16px 40px -12px oklch(0 0 0 / 0.6), 0 2px 8px oklch(0 0 0 / 0.3);
+  --code-bg: oklch(0.155 var(--tint) var(--hue));
+
+  --syntax-keyword: oklch(0.8 0.11 310);
+  --syntax-string: oklch(0.82 0.12 150);
+  --syntax-number: oklch(0.83 0.11 65);
+  --syntax-title: oklch(0.82 0.09 190);
+  --syntax-comment: oklch(0.62 0.01 var(--hue));
+  --syntax-attr: oklch(0.8 0.1 30);
+
+  --font-sans: "Hanken Grotesk Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Funnel Display Variable", "Hanken Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --radius-l: 16px;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+  --sidebar-width: 280px;
+  --reading-width: 760px;
+  --text-scale: 1;
+}
+
+:root[data-palette="emerald"] {
+  --hue: 165;
+  --tint: 0.012;
+  --accent-dark: oklch(0.8 0.145 162);
+  --accent-light: oklch(0.48 0.11 162);
+}
+
+:root[data-palette="violet"] {
+  --hue: 295;
+  --tint: 0.016;
+  --accent-dark: oklch(0.76 0.13 295);
+  --accent-light: oklch(0.48 0.19 295);
+}
+
+:root[data-palette="coral"] {
+  --hue: 25;
+  --tint: 0.01;
+  --accent-dark: oklch(0.75 0.14 28);
+  --accent-light: oklch(0.53 0.17 28);
+}
+
+:root[data-palette="mono"] {
+  --hue: 0;
+  --tint: 0;
+  --accent-dark: oklch(0.95 0 0);
+  --accent-light: oklch(0.25 0 0);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --background: oklch(0.985 calc(var(--tint) * 0.6) var(--hue));
+  --background-deep: oklch(0.96 var(--tint) var(--hue));
+  --surface: oklch(0.965 var(--tint) var(--hue));
+  --surface-hover: oklch(0.93 var(--tint) var(--hue));
+  --surface-raised: oklch(1 0 0);
+  --foreground: oklch(0.22 calc(var(--tint) * 1.5) var(--hue));
+  --muted: oklch(0.44 calc(var(--tint) * 2) var(--hue));
+  --faint: oklch(0.49 calc(var(--tint) * 2) var(--hue));
+  --border: oklch(0.9 var(--tint) var(--hue));
+  --border-strong: oklch(0.76 calc(var(--tint) * 1.5) var(--hue));
+
+  --accent: var(--accent-light);
+  --on-accent: oklch(0.985 0.002 var(--hue));
+  --primary-hover: color-mix(in oklab, var(--accent) 86%, black);
+
+  --danger: oklch(0.5 0.18 27);
+  --success: oklch(0.46 0.11 158);
+  --warning: oklch(0.5 0.13 48);
+
+  --overlay: oklch(0.2 0 0 / 0.4);
+  --shadow-float: 0 16px 40px -14px oklch(0.2 0 0 / 0.22), 0 2px 8px oklch(0.2 0 0 / 0.08);
+  --code-bg: oklch(0.965 var(--tint) var(--hue));
+
+  --syntax-keyword: oklch(0.45 0.16 310);
+  --syntax-string: oklch(0.44 0.11 150);
+  --syntax-number: oklch(0.48 0.11 60);
+  --syntax-title: oklch(0.44 0.08 190);
+  --syntax-comment: oklch(0.5 0.015 var(--hue));
+  --syntax-attr: oklch(0.47 0.14 30);
+}
+
+/* Tablets get a narrower sidebar, so the conversation keeps its width. */
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --sidebar-width: 224px;
+  }
+}
+
+/* On phones the sidebar is a drawer, so it may use more of the screen. */
+@media (max-width: 767px) {
+  :root {
+    --sidebar-width: min(85vw, 320px);
+  }
+}
+
+:root[data-text-size="small"] {
+  --text-scale: 0.9375;
+}
+
+:root[data-text-size="large"] {
+  --text-scale: 1.0938;
+}

@@ -1,0 +1,1187 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-07T17:04:18.758Z",
+  "title": "Design System: NEXA",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Worked Gold",
+        "canonical": "oklch(0.82 0.125 80)",
+        "tonalRamp": [
+          "oklch(0.15 0.125 80)",
+          "oklch(0.26 0.125 80)",
+          "oklch(0.37 0.125 80)",
+          "oklch(0.49 0.125 80)",
+          "oklch(0.6 0.125 80)",
+          "oklch(0.72 0.125 80)",
+          "oklch(0.83 0.125 80)",
+          "oklch(0.95 0.125 80)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Worked Gold, Hover",
+        "canonical": "color-mix(in oklab, oklch(0.82 0.125 80) 86%, white)",
+        "tonalRamp": [
+          "oklch(0.15 0.125 80)",
+          "oklch(0.26 0.125 80)",
+          "oklch(0.37 0.125 80)",
+          "oklch(0.49 0.125 80)",
+          "oklch(0.6 0.125 80)",
+          "oklch(0.72 0.125 80)",
+          "oklch(0.83 0.125 80)",
+          "oklch(0.95 0.125 80)"
+        ]
+      },
+      "accent-soft": {
+        "role": "primary",
+        "displayName": "Gold Wash",
+        "canonical": "color-mix(in oklab, oklch(0.82 0.125 80) 15%, transparent)",
+        "tonalRamp": [
+          "oklch(0.15 0.125 80)",
+          "oklch(0.26 0.125 80)",
+          "oklch(0.37 0.125 80)",
+          "oklch(0.49 0.125 80)",
+          "oklch(0.6 0.125 80)",
+          "oklch(0.72 0.125 80)",
+          "oklch(0.83 0.125 80)",
+          "oklch(0.95 0.125 80)"
+        ]
+      },
+      "on-accent": {
+        "role": "primary",
+        "displayName": "On Gold",
+        "canonical": "oklch(0.19 0.012 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.012 75)",
+          "oklch(0.26 0.012 75)",
+          "oklch(0.37 0.012 75)",
+          "oklch(0.49 0.012 75)",
+          "oklch(0.6 0.012 75)",
+          "oklch(0.72 0.012 75)",
+          "oklch(0.83 0.012 75)",
+          "oklch(0.95 0.012 75)"
+        ]
+      },
+      "background": {
+        "role": "neutral",
+        "displayName": "Warm Stone",
+        "canonical": "oklch(0.185 0.006 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 75)",
+          "oklch(0.26 0.006 75)",
+          "oklch(0.37 0.006 75)",
+          "oklch(0.49 0.006 75)",
+          "oklch(0.6 0.006 75)",
+          "oklch(0.72 0.006 75)",
+          "oklch(0.83 0.006 75)",
+          "oklch(0.95 0.006 75)"
+        ]
+      },
+      "background-deep": {
+        "role": "neutral",
+        "displayName": "Quarry Black",
+        "canonical": "oklch(0.155 0.006 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 75)",
+          "oklch(0.26 0.006 75)",
+          "oklch(0.37 0.006 75)",
+          "oklch(0.49 0.006 75)",
+          "oklch(0.6 0.006 75)",
+          "oklch(0.72 0.006 75)",
+          "oklch(0.83 0.006 75)",
+          "oklch(0.95 0.006 75)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Cut Stone",
+        "canonical": "oklch(0.225 0.006 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 75)",
+          "oklch(0.26 0.006 75)",
+          "oklch(0.37 0.006 75)",
+          "oklch(0.49 0.006 75)",
+          "oklch(0.6 0.006 75)",
+          "oklch(0.72 0.006 75)",
+          "oklch(0.83 0.006 75)",
+          "oklch(0.95 0.006 75)"
+        ]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "Cut Stone, Raised",
+        "canonical": "oklch(0.245 0.006 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 75)",
+          "oklch(0.26 0.006 75)",
+          "oklch(0.37 0.006 75)",
+          "oklch(0.49 0.006 75)",
+          "oklch(0.6 0.006 75)",
+          "oklch(0.72 0.006 75)",
+          "oklch(0.83 0.006 75)",
+          "oklch(0.95 0.006 75)"
+        ]
+      },
+      "surface-hover": {
+        "role": "neutral",
+        "displayName": "Cut Stone, Hover",
+        "canonical": "oklch(0.27 0.006 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 75)",
+          "oklch(0.26 0.006 75)",
+          "oklch(0.37 0.006 75)",
+          "oklch(0.49 0.006 75)",
+          "oklch(0.6 0.006 75)",
+          "oklch(0.72 0.006 75)",
+          "oklch(0.83 0.006 75)",
+          "oklch(0.95 0.006 75)"
+        ]
+      },
+      "foreground": {
+        "role": "neutral",
+        "displayName": "Limestone",
+        "canonical": "oklch(0.955 0.006 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 75)",
+          "oklch(0.26 0.006 75)",
+          "oklch(0.37 0.006 75)",
+          "oklch(0.49 0.006 75)",
+          "oklch(0.6 0.006 75)",
+          "oklch(0.72 0.006 75)",
+          "oklch(0.83 0.006 75)",
+          "oklch(0.95 0.006 75)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Weathered",
+        "canonical": "oklch(0.77 0.0096 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.0096 75)",
+          "oklch(0.26 0.0096 75)",
+          "oklch(0.37 0.0096 75)",
+          "oklch(0.49 0.0096 75)",
+          "oklch(0.6 0.0096 75)",
+          "oklch(0.72 0.0096 75)",
+          "oklch(0.83 0.0096 75)",
+          "oklch(0.95 0.0096 75)"
+        ]
+      },
+      "faint": {
+        "role": "neutral",
+        "displayName": "Dust",
+        "canonical": "oklch(0.66 0.0096 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.0096 75)",
+          "oklch(0.26 0.0096 75)",
+          "oklch(0.37 0.0096 75)",
+          "oklch(0.49 0.0096 75)",
+          "oklch(0.6 0.0096 75)",
+          "oklch(0.72 0.0096 75)",
+          "oklch(0.83 0.0096 75)",
+          "oklch(0.95 0.0096 75)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Seam",
+        "canonical": "oklch(0.3 0.006 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 75)",
+          "oklch(0.26 0.006 75)",
+          "oklch(0.37 0.006 75)",
+          "oklch(0.49 0.006 75)",
+          "oklch(0.6 0.006 75)",
+          "oklch(0.72 0.006 75)",
+          "oklch(0.83 0.006 75)",
+          "oklch(0.95 0.006 75)"
+        ]
+      },
+      "border-strong": {
+        "role": "neutral",
+        "displayName": "Firm Seam",
+        "canonical": "oklch(0.42 0.0078 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.0078 75)",
+          "oklch(0.26 0.0078 75)",
+          "oklch(0.37 0.0078 75)",
+          "oklch(0.49 0.0078 75)",
+          "oklch(0.6 0.0078 75)",
+          "oklch(0.72 0.0078 75)",
+          "oklch(0.83 0.0078 75)",
+          "oklch(0.95 0.0078 75)"
+        ]
+      },
+      "danger": {
+        "role": "status",
+        "displayName": "Ember",
+        "canonical": "oklch(0.72 0.17 25)",
+        "tonalRamp": [
+          "oklch(0.15 0.17 25)",
+          "oklch(0.26 0.17 25)",
+          "oklch(0.37 0.17 25)",
+          "oklch(0.49 0.17 25)",
+          "oklch(0.6 0.17 25)",
+          "oklch(0.72 0.17 25)",
+          "oklch(0.83 0.17 25)",
+          "oklch(0.95 0.17 25)"
+        ]
+      },
+      "danger-soft": {
+        "role": "status",
+        "displayName": "Ember Wash",
+        "canonical": "color-mix(in oklab, oklch(0.72 0.17 25) 13%, transparent)",
+        "tonalRamp": [
+          "oklch(0.15 0.17 25)",
+          "oklch(0.26 0.17 25)",
+          "oklch(0.37 0.17 25)",
+          "oklch(0.49 0.17 25)",
+          "oklch(0.6 0.17 25)",
+          "oklch(0.72 0.17 25)",
+          "oklch(0.83 0.17 25)",
+          "oklch(0.95 0.17 25)"
+        ]
+      },
+      "success": {
+        "role": "status",
+        "displayName": "Verdigris",
+        "canonical": "oklch(0.8 0.14 158)",
+        "tonalRamp": [
+          "oklch(0.15 0.14 158)",
+          "oklch(0.26 0.14 158)",
+          "oklch(0.37 0.14 158)",
+          "oklch(0.49 0.14 158)",
+          "oklch(0.6 0.14 158)",
+          "oklch(0.72 0.14 158)",
+          "oklch(0.83 0.14 158)",
+          "oklch(0.95 0.14 158)"
+        ]
+      },
+      "warning": {
+        "role": "status",
+        "displayName": "Amber",
+        "canonical": "oklch(0.78 0.15 52)",
+        "tonalRamp": [
+          "oklch(0.15 0.13 85)",
+          "oklch(0.26 0.13 85)",
+          "oklch(0.37 0.13 85)",
+          "oklch(0.49 0.13 85)",
+          "oklch(0.6 0.13 85)",
+          "oklch(0.72 0.13 85)",
+          "oklch(0.83 0.13 85)",
+          "oklch(0.95 0.13 85)"
+        ]
+      },
+      "overlay": {
+        "role": "neutral",
+        "displayName": "Scrim",
+        "canonical": "oklch(0.1 0 0 / 0.66)",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.26 0 0)",
+          "oklch(0.37 0 0)",
+          "oklch(0.49 0 0)",
+          "oklch(0.6 0 0)",
+          "oklch(0.72 0 0)",
+          "oklch(0.83 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "accent-light": {
+        "role": "primary",
+        "displayName": "Burnished Gold",
+        "canonical": "oklch(0.5 0.105 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.105 75)",
+          "oklch(0.26 0.105 75)",
+          "oklch(0.37 0.105 75)",
+          "oklch(0.49 0.105 75)",
+          "oklch(0.6 0.105 75)",
+          "oklch(0.72 0.105 75)",
+          "oklch(0.83 0.105 75)",
+          "oklch(0.95 0.105 75)"
+        ]
+      },
+      "accent-hover-light": {
+        "role": "primary",
+        "displayName": "Worked Gold, Hover (Light)",
+        "canonical": "color-mix(in oklab, oklch(0.5 0.105 75) 86%, black)",
+        "tonalRamp": [
+          "oklch(0.15 0.105 75)",
+          "oklch(0.26 0.105 75)",
+          "oklch(0.37 0.105 75)",
+          "oklch(0.49 0.105 75)",
+          "oklch(0.6 0.105 75)",
+          "oklch(0.72 0.105 75)",
+          "oklch(0.83 0.105 75)",
+          "oklch(0.95 0.105 75)"
+        ]
+      },
+      "on-accent-light": {
+        "role": "primary",
+        "displayName": "On Gold (Light)",
+        "canonical": "oklch(0.985 0.002 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 75)",
+          "oklch(0.26 0.002 75)",
+          "oklch(0.37 0.002 75)",
+          "oklch(0.49 0.002 75)",
+          "oklch(0.6 0.002 75)",
+          "oklch(0.72 0.002 75)",
+          "oklch(0.83 0.002 75)",
+          "oklch(0.95 0.002 75)"
+        ]
+      },
+      "background-light": {
+        "role": "neutral",
+        "displayName": "Warm Stone (Light)",
+        "canonical": "oklch(0.985 0.0036 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.0036 75)",
+          "oklch(0.26 0.0036 75)",
+          "oklch(0.37 0.0036 75)",
+          "oklch(0.49 0.0036 75)",
+          "oklch(0.6 0.0036 75)",
+          "oklch(0.72 0.0036 75)",
+          "oklch(0.83 0.0036 75)",
+          "oklch(0.95 0.0036 75)"
+        ]
+      },
+      "background-deep-light": {
+        "role": "neutral",
+        "displayName": "Quarry Black (Light)",
+        "canonical": "oklch(0.96 0.006 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 75)",
+          "oklch(0.26 0.006 75)",
+          "oklch(0.37 0.006 75)",
+          "oklch(0.49 0.006 75)",
+          "oklch(0.6 0.006 75)",
+          "oklch(0.72 0.006 75)",
+          "oklch(0.83 0.006 75)",
+          "oklch(0.95 0.006 75)"
+        ]
+      },
+      "surface-light": {
+        "role": "neutral",
+        "displayName": "Cut Stone (Light)",
+        "canonical": "oklch(0.965 0.006 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 75)",
+          "oklch(0.26 0.006 75)",
+          "oklch(0.37 0.006 75)",
+          "oklch(0.49 0.006 75)",
+          "oklch(0.6 0.006 75)",
+          "oklch(0.72 0.006 75)",
+          "oklch(0.83 0.006 75)",
+          "oklch(0.95 0.006 75)"
+        ]
+      },
+      "surface-raised-light": {
+        "role": "neutral",
+        "displayName": "Cut Stone, Raised (Light)",
+        "canonical": "oklch(1 0 0)",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.26 0 0)",
+          "oklch(0.37 0 0)",
+          "oklch(0.49 0 0)",
+          "oklch(0.6 0 0)",
+          "oklch(0.72 0 0)",
+          "oklch(0.83 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "surface-hover-light": {
+        "role": "neutral",
+        "displayName": "Cut Stone, Hover (Light)",
+        "canonical": "oklch(0.93 0.006 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 75)",
+          "oklch(0.26 0.006 75)",
+          "oklch(0.37 0.006 75)",
+          "oklch(0.49 0.006 75)",
+          "oklch(0.6 0.006 75)",
+          "oklch(0.72 0.006 75)",
+          "oklch(0.83 0.006 75)",
+          "oklch(0.95 0.006 75)"
+        ]
+      },
+      "foreground-light": {
+        "role": "neutral",
+        "displayName": "Limestone (Light)",
+        "canonical": "oklch(0.22 0.009 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.009 75)",
+          "oklch(0.26 0.009 75)",
+          "oklch(0.37 0.009 75)",
+          "oklch(0.49 0.009 75)",
+          "oklch(0.6 0.009 75)",
+          "oklch(0.72 0.009 75)",
+          "oklch(0.83 0.009 75)",
+          "oklch(0.95 0.009 75)"
+        ]
+      },
+      "muted-light": {
+        "role": "neutral",
+        "displayName": "Weathered (Light)",
+        "canonical": "oklch(0.44 0.012 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.012 75)",
+          "oklch(0.26 0.012 75)",
+          "oklch(0.37 0.012 75)",
+          "oklch(0.49 0.012 75)",
+          "oklch(0.6 0.012 75)",
+          "oklch(0.72 0.012 75)",
+          "oklch(0.83 0.012 75)",
+          "oklch(0.95 0.012 75)"
+        ]
+      },
+      "faint-light": {
+        "role": "neutral",
+        "displayName": "Dust (Light)",
+        "canonical": "oklch(0.49 0.012 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.012 75)",
+          "oklch(0.26 0.012 75)",
+          "oklch(0.37 0.012 75)",
+          "oklch(0.49 0.012 75)",
+          "oklch(0.6 0.012 75)",
+          "oklch(0.72 0.012 75)",
+          "oklch(0.83 0.012 75)",
+          "oklch(0.95 0.012 75)"
+        ]
+      },
+      "border-light": {
+        "role": "neutral",
+        "displayName": "Seam (Light)",
+        "canonical": "oklch(0.9 0.006 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 75)",
+          "oklch(0.26 0.006 75)",
+          "oklch(0.37 0.006 75)",
+          "oklch(0.49 0.006 75)",
+          "oklch(0.6 0.006 75)",
+          "oklch(0.72 0.006 75)",
+          "oklch(0.83 0.006 75)",
+          "oklch(0.95 0.006 75)"
+        ]
+      },
+      "border-strong-light": {
+        "role": "neutral",
+        "displayName": "Firm Seam (Light)",
+        "canonical": "oklch(0.76 0.009 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.009 75)",
+          "oklch(0.26 0.009 75)",
+          "oklch(0.37 0.009 75)",
+          "oklch(0.49 0.009 75)",
+          "oklch(0.6 0.009 75)",
+          "oklch(0.72 0.009 75)",
+          "oklch(0.83 0.009 75)",
+          "oklch(0.95 0.009 75)"
+        ]
+      },
+      "danger-light": {
+        "role": "status",
+        "displayName": "Ember (Light)",
+        "canonical": "oklch(0.5 0.18 27)",
+        "tonalRamp": [
+          "oklch(0.15 0.18 27)",
+          "oklch(0.26 0.18 27)",
+          "oklch(0.37 0.18 27)",
+          "oklch(0.49 0.18 27)",
+          "oklch(0.6 0.18 27)",
+          "oklch(0.72 0.18 27)",
+          "oklch(0.83 0.18 27)",
+          "oklch(0.95 0.18 27)"
+        ]
+      },
+      "success-light": {
+        "role": "status",
+        "displayName": "Verdigris (Light)",
+        "canonical": "oklch(0.46 0.11 158)",
+        "tonalRamp": [
+          "oklch(0.15 0.11 158)",
+          "oklch(0.26 0.11 158)",
+          "oklch(0.37 0.11 158)",
+          "oklch(0.49 0.11 158)",
+          "oklch(0.6 0.11 158)",
+          "oklch(0.72 0.11 158)",
+          "oklch(0.83 0.11 158)",
+          "oklch(0.95 0.11 158)"
+        ]
+      },
+      "warning-light": {
+        "role": "status",
+        "displayName": "Amber (Light)",
+        "canonical": "oklch(0.5 0.13 48)",
+        "tonalRamp": [
+          "oklch(0.15 0.1 75)",
+          "oklch(0.26 0.1 75)",
+          "oklch(0.37 0.1 75)",
+          "oklch(0.49 0.1 75)",
+          "oklch(0.6 0.1 75)",
+          "oklch(0.72 0.1 75)",
+          "oklch(0.83 0.1 75)",
+          "oklch(0.95 0.1 75)"
+        ]
+      },
+      "overlay-light": {
+        "role": "neutral",
+        "displayName": "Scrim (Light)",
+        "canonical": "oklch(0.2 0 0 / 0.4)",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.26 0 0)",
+          "oklch(0.37 0 0)",
+          "oklch(0.49 0 0)",
+          "oklch(0.6 0 0)",
+          "oklch(0.72 0 0)",
+          "oklch(0.83 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "emerald-accent": {
+        "role": "palette-accent",
+        "displayName": "Emerald Accent",
+        "canonical": "oklch(0.8 0.145 162)",
+        "tonalRamp": [
+          "oklch(0.15 0.145 162)",
+          "oklch(0.26 0.145 162)",
+          "oklch(0.37 0.145 162)",
+          "oklch(0.49 0.145 162)",
+          "oklch(0.6 0.145 162)",
+          "oklch(0.72 0.145 162)",
+          "oklch(0.83 0.145 162)",
+          "oklch(0.95 0.145 162)"
+        ]
+      },
+      "emerald-accent-light": {
+        "role": "palette-accent",
+        "displayName": "Emerald Accent Light",
+        "canonical": "oklch(0.48 0.11 162)",
+        "tonalRamp": [
+          "oklch(0.15 0.11 162)",
+          "oklch(0.26 0.11 162)",
+          "oklch(0.37 0.11 162)",
+          "oklch(0.49 0.11 162)",
+          "oklch(0.6 0.11 162)",
+          "oklch(0.72 0.11 162)",
+          "oklch(0.83 0.11 162)",
+          "oklch(0.95 0.11 162)"
+        ]
+      },
+      "violet-accent": {
+        "role": "palette-accent",
+        "displayName": "Violet Accent",
+        "canonical": "oklch(0.76 0.13 295)",
+        "tonalRamp": [
+          "oklch(0.15 0.13 295)",
+          "oklch(0.26 0.13 295)",
+          "oklch(0.37 0.13 295)",
+          "oklch(0.49 0.13 295)",
+          "oklch(0.6 0.13 295)",
+          "oklch(0.72 0.13 295)",
+          "oklch(0.83 0.13 295)",
+          "oklch(0.95 0.13 295)"
+        ]
+      },
+      "violet-accent-light": {
+        "role": "palette-accent",
+        "displayName": "Violet Accent Light",
+        "canonical": "oklch(0.48 0.19 295)",
+        "tonalRamp": [
+          "oklch(0.15 0.19 295)",
+          "oklch(0.26 0.19 295)",
+          "oklch(0.37 0.19 295)",
+          "oklch(0.49 0.19 295)",
+          "oklch(0.6 0.19 295)",
+          "oklch(0.72 0.19 295)",
+          "oklch(0.83 0.19 295)",
+          "oklch(0.95 0.19 295)"
+        ]
+      },
+      "coral-accent": {
+        "role": "palette-accent",
+        "displayName": "Coral Accent",
+        "canonical": "oklch(0.75 0.14 28)",
+        "tonalRamp": [
+          "oklch(0.15 0.14 28)",
+          "oklch(0.26 0.14 28)",
+          "oklch(0.37 0.14 28)",
+          "oklch(0.49 0.14 28)",
+          "oklch(0.6 0.14 28)",
+          "oklch(0.72 0.14 28)",
+          "oklch(0.83 0.14 28)",
+          "oklch(0.95 0.14 28)"
+        ]
+      },
+      "coral-accent-light": {
+        "role": "palette-accent",
+        "displayName": "Coral Accent Light",
+        "canonical": "oklch(0.53 0.17 28)",
+        "tonalRamp": [
+          "oklch(0.15 0.17 28)",
+          "oklch(0.26 0.17 28)",
+          "oklch(0.37 0.17 28)",
+          "oklch(0.49 0.17 28)",
+          "oklch(0.6 0.17 28)",
+          "oklch(0.72 0.17 28)",
+          "oklch(0.83 0.17 28)",
+          "oklch(0.95 0.17 28)"
+        ]
+      },
+      "mono-accent": {
+        "role": "palette-accent",
+        "displayName": "Mono Accent",
+        "canonical": "oklch(0.95 0 0)",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.26 0 0)",
+          "oklch(0.37 0 0)",
+          "oklch(0.49 0 0)",
+          "oklch(0.6 0 0)",
+          "oklch(0.72 0 0)",
+          "oklch(0.83 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "mono-accent-light": {
+        "role": "palette-accent",
+        "displayName": "Mono Accent Light",
+        "canonical": "oklch(0.25 0 0)",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.26 0 0)",
+          "oklch(0.37 0 0)",
+          "oklch(0.49 0 0)",
+          "oklch(0.6 0 0)",
+          "oklch(0.72 0 0)",
+          "oklch(0.83 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "syntax-keyword": {
+        "role": "syntax",
+        "displayName": "Syntax Keyword",
+        "canonical": "oklch(0.8 0.11 310)",
+        "tonalRamp": [
+          "oklch(0.15 0.11 310)",
+          "oklch(0.26 0.11 310)",
+          "oklch(0.37 0.11 310)",
+          "oklch(0.49 0.11 310)",
+          "oklch(0.6 0.11 310)",
+          "oklch(0.72 0.11 310)",
+          "oklch(0.83 0.11 310)",
+          "oklch(0.95 0.11 310)"
+        ]
+      },
+      "syntax-string": {
+        "role": "syntax",
+        "displayName": "Syntax String",
+        "canonical": "oklch(0.82 0.12 150)",
+        "tonalRamp": [
+          "oklch(0.15 0.12 150)",
+          "oklch(0.26 0.12 150)",
+          "oklch(0.37 0.12 150)",
+          "oklch(0.49 0.12 150)",
+          "oklch(0.6 0.12 150)",
+          "oklch(0.72 0.12 150)",
+          "oklch(0.83 0.12 150)",
+          "oklch(0.95 0.12 150)"
+        ]
+      },
+      "syntax-number": {
+        "role": "syntax",
+        "displayName": "Syntax Number",
+        "canonical": "oklch(0.83 0.11 65)",
+        "tonalRamp": [
+          "oklch(0.15 0.11 65)",
+          "oklch(0.26 0.11 65)",
+          "oklch(0.37 0.11 65)",
+          "oklch(0.49 0.11 65)",
+          "oklch(0.6 0.11 65)",
+          "oklch(0.72 0.11 65)",
+          "oklch(0.83 0.11 65)",
+          "oklch(0.95 0.11 65)"
+        ]
+      },
+      "syntax-title": {
+        "role": "syntax",
+        "displayName": "Syntax Title",
+        "canonical": "oklch(0.82 0.09 190)",
+        "tonalRamp": [
+          "oklch(0.15 0.09 190)",
+          "oklch(0.26 0.09 190)",
+          "oklch(0.37 0.09 190)",
+          "oklch(0.49 0.09 190)",
+          "oklch(0.6 0.09 190)",
+          "oklch(0.72 0.09 190)",
+          "oklch(0.83 0.09 190)",
+          "oklch(0.95 0.09 190)"
+        ]
+      },
+      "syntax-comment": {
+        "role": "syntax",
+        "displayName": "Syntax Comment",
+        "canonical": "oklch(0.62 0.01 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.01 75)",
+          "oklch(0.26 0.01 75)",
+          "oklch(0.37 0.01 75)",
+          "oklch(0.49 0.01 75)",
+          "oklch(0.6 0.01 75)",
+          "oklch(0.72 0.01 75)",
+          "oklch(0.83 0.01 75)",
+          "oklch(0.95 0.01 75)"
+        ]
+      },
+      "syntax-attr": {
+        "role": "syntax",
+        "displayName": "Syntax Attr",
+        "canonical": "oklch(0.8 0.1 30)",
+        "tonalRamp": [
+          "oklch(0.15 0.1 30)",
+          "oklch(0.26 0.1 30)",
+          "oklch(0.37 0.1 30)",
+          "oklch(0.49 0.1 30)",
+          "oklch(0.6 0.1 30)",
+          "oklch(0.72 0.1 30)",
+          "oklch(0.83 0.1 30)",
+          "oklch(0.95 0.1 30)"
+        ]
+      },
+      "syntax-keyword-light": {
+        "role": "syntax",
+        "displayName": "Syntax Keyword Light",
+        "canonical": "oklch(0.45 0.16 310)",
+        "tonalRamp": [
+          "oklch(0.15 0.16 310)",
+          "oklch(0.26 0.16 310)",
+          "oklch(0.37 0.16 310)",
+          "oklch(0.49 0.16 310)",
+          "oklch(0.6 0.16 310)",
+          "oklch(0.72 0.16 310)",
+          "oklch(0.83 0.16 310)",
+          "oklch(0.95 0.16 310)"
+        ]
+      },
+      "syntax-string-light": {
+        "role": "syntax",
+        "displayName": "Syntax String Light",
+        "canonical": "oklch(0.44 0.11 150)",
+        "tonalRamp": [
+          "oklch(0.15 0.11 150)",
+          "oklch(0.26 0.11 150)",
+          "oklch(0.37 0.11 150)",
+          "oklch(0.49 0.11 150)",
+          "oklch(0.6 0.11 150)",
+          "oklch(0.72 0.11 150)",
+          "oklch(0.83 0.11 150)",
+          "oklch(0.95 0.11 150)"
+        ]
+      },
+      "syntax-number-light": {
+        "role": "syntax",
+        "displayName": "Syntax Number Light",
+        "canonical": "oklch(0.48 0.11 60)",
+        "tonalRamp": [
+          "oklch(0.15 0.11 60)",
+          "oklch(0.26 0.11 60)",
+          "oklch(0.37 0.11 60)",
+          "oklch(0.49 0.11 60)",
+          "oklch(0.6 0.11 60)",
+          "oklch(0.72 0.11 60)",
+          "oklch(0.83 0.11 60)",
+          "oklch(0.95 0.11 60)"
+        ]
+      },
+      "syntax-title-light": {
+        "role": "syntax",
+        "displayName": "Syntax Title Light",
+        "canonical": "oklch(0.44 0.08 190)",
+        "tonalRamp": [
+          "oklch(0.15 0.08 190)",
+          "oklch(0.26 0.08 190)",
+          "oklch(0.37 0.08 190)",
+          "oklch(0.49 0.08 190)",
+          "oklch(0.6 0.08 190)",
+          "oklch(0.72 0.08 190)",
+          "oklch(0.83 0.08 190)",
+          "oklch(0.95 0.08 190)"
+        ]
+      },
+      "syntax-comment-light": {
+        "role": "syntax",
+        "displayName": "Syntax Comment Light",
+        "canonical": "oklch(0.5 0.015 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.015 75)",
+          "oklch(0.26 0.015 75)",
+          "oklch(0.37 0.015 75)",
+          "oklch(0.49 0.015 75)",
+          "oklch(0.6 0.015 75)",
+          "oklch(0.72 0.015 75)",
+          "oklch(0.83 0.015 75)",
+          "oklch(0.95 0.015 75)"
+        ]
+      },
+      "syntax-attr-light": {
+        "role": "syntax",
+        "displayName": "Syntax Attr Light",
+        "canonical": "oklch(0.47 0.14 30)",
+        "tonalRamp": [
+          "oklch(0.15 0.14 30)",
+          "oklch(0.26 0.14 30)",
+          "oklch(0.37 0.14 30)",
+          "oklch(0.49 0.14 30)",
+          "oklch(0.6 0.14 30)",
+          "oklch(0.72 0.14 30)",
+          "oklch(0.83 0.14 30)",
+          "oklch(0.95 0.14 30)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The landing hero only."
+      },
+      "headline-closing": {
+        "displayName": "Closing Headline",
+        "purpose": "The final landing statement."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Landing section titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Empty states."
+      },
+      "title-small": {
+        "displayName": "Small Title",
+        "purpose": "Dialog titles."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "NEXA, and nothing else."
+      },
+      "prose": {
+        "displayName": "Prose",
+        "purpose": "Rendered model answers."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "The interface default, and text typed in the composer."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Buttons, inputs and conversation titles."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels, small buttons and secondary lines."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Group labels, metadata and example notices."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Code, hosts, URLs and keys. Ligatures off."
+      }
+    },
+    "shadows": [
+      {
+        "name": "float",
+        "value": "0 16px 40px -12px oklch(0 0 0 / 0.6), 0 2px 8px oklch(0 0 0 / 0.3)",
+        "purpose": "Dark theme. The only shadow: the composer, dialogs, floating panels and the landing product preview."
+      },
+      {
+        "name": "float-light",
+        "value": "0 16px 40px -14px oklch(0.2 0 0 / 0.22), 0 2px 8px oklch(0.2 0 0 / 0.08)",
+        "purpose": "Light theme counterpart of float."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Default easing for state changes and entrances."
+      },
+      {
+        "name": "state-change",
+        "value": "100ms",
+        "purpose": "Colour and border transitions on controls."
+      },
+      {
+        "name": "press",
+        "value": "140ms, scale(0.97)",
+        "purpose": "Pressable feedback."
+      },
+      {
+        "name": "pop-in",
+        "value": "150ms",
+        "purpose": "Floating panels, from the trigger's corner."
+      },
+      {
+        "name": "fade-in",
+        "value": "160ms",
+        "purpose": "Swapped content, such as the host on the landing wire."
+      },
+      {
+        "name": "rise",
+        "value": "620ms, 70ms stagger",
+        "purpose": "The single orchestrated moment on page load."
+      },
+      {
+        "name": "wire-pulse-active",
+        "value": "1.1s linear infinite",
+        "purpose": "The wire while a response is generating."
+      },
+      {
+        "name": "wire-pulse-landing",
+        "value": "2.4s linear infinite",
+        "purpose": "The calmer pulse of the landing wire."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ],
+    "layout": [
+      {
+        "name": "sidebar-width",
+        "value": "280px",
+        "purpose": "224px from 768 to 1023px; min(85vw, 320px) as a drawer below 768px."
+      },
+      {
+        "name": "reading-width",
+        "value": "760px",
+        "purpose": "The conversation column, composer and wire."
+      },
+      {
+        "name": "landing-container",
+        "value": "1152px",
+        "purpose": "The landing page container."
+      }
+    ],
+    "palettes": [
+      {
+        "id": "gold",
+        "default": true,
+        "hue": 75,
+        "tint": 0.006,
+        "accentDark": "oklch(0.82 0.125 80)",
+        "accentLight": "oklch(0.5 0.105 75)",
+        "swatch": "#eebb5e",
+        "chromeDark": "#141210",
+        "chromeLight": "#fbfaf7"
+      },
+      {
+        "id": "emerald",
+        "hue": 165,
+        "tint": 0.012,
+        "accentDark": "oklch(0.8 0.145 162)",
+        "accentLight": "oklch(0.48 0.11 162)",
+        "swatch": "#52daa1",
+        "chromeDark": "#0e1411",
+        "chromeLight": "#f6fcf9"
+      },
+      {
+        "id": "violet",
+        "hue": 295,
+        "tint": 0.016,
+        "accentDark": "oklch(0.76 0.13 295)",
+        "accentLight": "oklch(0.48 0.19 295)",
+        "swatch": "#b7a0fb",
+        "chromeDark": "#131119",
+        "chromeLight": "#faf9ff"
+      },
+      {
+        "id": "coral",
+        "hue": 25,
+        "tint": 0.01,
+        "accentDark": "oklch(0.75 0.14 28)",
+        "accentLight": "oklch(0.53 0.17 28)",
+        "swatch": "#fa897b",
+        "chromeDark": "#171110",
+        "chromeLight": "#fef9f8"
+      },
+      {
+        "id": "mono",
+        "hue": 0,
+        "tint": 0,
+        "accentDark": "oklch(0.95 0 0)",
+        "accentLight": "oklch(0.25 0 0)",
+        "swatch": "#eeeeee",
+        "chromeDark": "#131313",
+        "chromeLight": "#fafafa"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action.",
+      "html": "<button class=\"ds-btn-primary\">Start chatting</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; height: 36px; padding: 0 14px; font-family: var(--font-sans); font-size: 0.875rem; font-weight: 500; border-radius: var(--radius-m); cursor: pointer; transition: background-color 100ms, color 100ms, transform 140ms var(--ease-out); background: var(--primary); color: var(--on-primary); border: none; font-weight: 600; } .ds-btn-primary:hover { background: var(--primary-hover); } .ds-btn-primary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .ds-btn-primary:active { transform: scale(0.97); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "The default button: a firm seam on a transparent ground.",
+      "html": "<button class=\"ds-btn-secondary\">Configure provider</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; height: 36px; padding: 0 14px; font-family: var(--font-sans); font-size: 0.875rem; font-weight: 500; border-radius: var(--radius-m); cursor: pointer; transition: background-color 100ms, color 100ms, transform 140ms var(--ease-out); background: transparent; color: var(--foreground); border: 1px solid var(--border-strong); } .ds-btn-secondary:hover { background: var(--surface-hover); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .ds-btn-secondary:active { transform: scale(0.97); }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "A quiet action that fills only on hover.",
+      "html": "<button class=\"ds-btn-ghost\">Cancel</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; height: 36px; padding: 0 14px; font-family: var(--font-sans); font-size: 0.875rem; font-weight: 500; border-radius: var(--radius-m); cursor: pointer; transition: background-color 100ms, color 100ms, transform 140ms var(--ease-out); background: transparent; color: var(--muted); border: none; } .ds-btn-ghost:hover { background: var(--surface-hover); color: var(--foreground); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .ds-btn-ghost:active { transform: scale(0.97); }"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Destructive actions stay outlined until hover or keyboard focus.",
+      "html": "<button class=\"ds-btn-danger\">Delete all data</button>",
+      "css": ".ds-btn-danger { display: inline-flex; align-items: center; justify-content: center; height: 36px; padding: 0 14px; font-family: var(--font-sans); font-size: 0.875rem; font-weight: 500; border-radius: var(--radius-m); cursor: pointer; transition: background-color 100ms, color 100ms, transform 140ms var(--ease-out); background: transparent; color: var(--danger); border: 1px solid color-mix(in oklab, var(--danger) 50%, transparent); } .ds-btn-danger:hover { background: var(--danger-soft); } .ds-btn-danger:focus-visible { background: var(--danger-soft); outline: 2px solid var(--accent); outline-offset: 2px; } .ds-btn-danger:active { transform: scale(0.97); }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "A recessed well on the deepest neutral, with its label above.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">Base URL</span><input class=\"ds-input\" value=\"https://api.example.com/v1\" spellcheck=\"false\"></label>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 6px; font-family: var(--font-sans); } .ds-field-label { font-size: 0.8125rem; font-weight: 500; color: var(--foreground); } .ds-input { height: 40px; width: 100%; padding: 0 12px; font-family: var(--font-mono); font-size: 0.875rem; color: var(--foreground); caret-color: var(--accent); background: var(--background-deep); border: 1px solid var(--border); border-radius: var(--radius-m); transition: border-color 100ms; } .ds-input:hover { border-color: var(--border-strong); } .ds-input:focus { border-color: var(--accent); } .ds-input:focus-visible { outline: 2px solid var(--accent); outline-offset: 0; }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "chip",
+      "description": "A setting choice. The selected segment uses a neutral lift, not the accent.",
+      "html": "<div class=\"ds-seg\" role=\"radiogroup\" aria-label=\"Theme\"><button class=\"ds-seg-item\" role=\"radio\" aria-checked=\"true\">Dark</button><button class=\"ds-seg-item\" role=\"radio\" aria-checked=\"false\">Light</button><button class=\"ds-seg-item\" role=\"radio\" aria-checked=\"false\">System</button></div>",
+      "css": ".ds-seg { display: inline-flex; padding: 2px; background: var(--background-deep); border: 1px solid var(--border); border-radius: var(--radius-m); } .ds-seg-item { height: 32px; padding: 0 12px; font-family: var(--font-sans); font-size: 0.8125rem; font-weight: 500; color: var(--muted); background: transparent; border: none; border-radius: 7px; cursor: pointer; transition: color 100ms, background-color 100ms; } .ds-seg-item:hover { color: var(--foreground); } .ds-seg-item[aria-checked=\"true\"] { background: var(--surface-hover); color: var(--foreground); } .ds-seg-item:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }"
+    },
+    {
+      "name": "Conversation Rows",
+      "kind": "nav",
+      "refersTo": "conversation-row",
+      "description": "Sidebar navigation on the deepest neutral. The active row takes the accent wash.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Conversations\"><h2 class=\"ds-nav-label\">Today</h2><a class=\"ds-nav-row ds-nav-row-active\" href=\"#\" aria-current=\"page\">Understanding WebSockets</a><a class=\"ds-nav-row\" href=\"#\">Refactor the auth flow</a><a class=\"ds-nav-row\" href=\"#\">SQL window functions</a></nav>",
+      "css": ".ds-nav { display: flex; flex-direction: column; gap: 1px; width: 260px; padding: 10px; background: var(--background-deep); font-family: var(--font-sans); } .ds-nav-label { margin: 0; padding: 6px 8px; font-size: 0.75rem; font-weight: 500; color: var(--faint); } .ds-nav-row { display: block; padding: 6px 8px; font-size: 0.875rem; color: var(--muted); text-decoration: none; border-radius: var(--radius-s); } .ds-nav-row:hover { background: var(--surface); } .ds-nav-row-active, .ds-nav-row-active:hover { background: var(--accent-soft); color: var(--foreground); } .ds-nav-row:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }"
+    },
+    {
+      "name": "Code Block",
+      "kind": "card",
+      "refersTo": "code-block",
+      "description": "Code in a recessed panel with a seamed caption. Syntax colours follow the theme.",
+      "html": "<figure class=\"ds-code\"><figcaption class=\"ds-code-head\">TypeScript</figcaption><pre class=\"ds-code-body\"><span style=\"color: var(--syntax-keyword)\">const</span> socket = <span style=\"color: var(--syntax-keyword)\">new</span> <span style=\"color: var(--syntax-title)\">WebSocket</span>(url);\nsocket.<span style=\"color: var(--syntax-title)\">send</span>(<span style=\"color: var(--syntax-string)\">\"hello\"</span>);</pre></figure>",
+      "css": ".ds-code { margin: 0; overflow: hidden; background: var(--code-bg); border: 1px solid var(--border); border-radius: var(--radius-m); } .ds-code-head { display: flex; align-items: center; height: 36px; padding: 0 12px; font-family: var(--font-sans); font-size: 0.8125rem; color: var(--muted); border-bottom: 1px solid var(--border); } .ds-code-body { margin: 0; padding: 12px; font-family: var(--font-mono); font-size: 0.8125rem; line-height: 1.6; font-variant-ligatures: none; color: var(--foreground); overflow-x: auto; }"
+    },
+    {
+      "name": "Composer with Wire",
+      "kind": "custom",
+      "refersTo": "composer",
+      "description": "The signature: the floating composer, and the wire naming the exact host a message will reach. The pulse runs only while generating.",
+      "html": "<div class=\"ds-composer-wrap\"><div class=\"ds-composer\"><textarea class=\"ds-composer-input\" rows=\"1\" aria-label=\"Message\" placeholder=\"Message Claude Opus 4.7\"></textarea><div class=\"ds-composer-row\"><button class=\"ds-composer-icon\" aria-label=\"Attach files\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551\"/></svg></button><span class=\"ds-composer-model\">Claude Opus 4.7</span><button class=\"ds-composer-send\" aria-label=\"Send message\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12 7-7 7 7\"/><path d=\"M12 19V5\"/></svg></button></div></div><a class=\"ds-wire\" href=\"#\"><span class=\"ds-wire-stem\"></span><span class=\"ds-wire-dot\"></span><span class=\"ds-wire-line\"><span class=\"ds-wire-pulse\"></span></span><span class=\"ds-wire-label\">direct to <span class=\"ds-wire-host\">api.anthropic.com</span></span></a></div>",
+      "css": ".ds-composer-wrap { width: 100%; max-width: 720px; font-family: var(--font-sans); } .ds-composer { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-l); box-shadow: var(--shadow-float); transition: border-color 100ms; } .ds-composer:focus-within { border-color: var(--accent); } .ds-composer-input { display: block; width: 100%; padding: 12px 14px 4px; font-family: inherit; font-size: 0.9375rem; line-height: 1.625; color: var(--foreground); caret-color: var(--accent); background: transparent; border: none; outline: none; resize: none; } .ds-composer-input::placeholder { color: var(--faint); } .ds-composer-row { display: flex; align-items: center; gap: 4px; padding: 0 8px 8px; } .ds-composer-icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; color: var(--muted); background: transparent; border: none; border-radius: var(--radius-s); cursor: pointer; } .ds-composer-icon:hover { background: var(--surface-hover); color: var(--foreground); } .ds-composer-icon:focus-visible, .ds-composer-send:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .ds-composer-model { flex: 1; padding: 0 8px; font-size: 0.8125rem; font-weight: 500; color: var(--muted); } .ds-composer-send { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; color: var(--on-primary); background: var(--primary); border: none; border-radius: var(--radius-m); cursor: pointer; } .ds-wire { position: relative; display: flex; align-items: center; gap: 8px; min-height: 36px; padding: 0 12px; color: var(--muted); text-decoration: none; font-size: 0.8125rem; } .ds-wire:hover { color: var(--foreground); } .ds-wire:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .ds-wire-stem { position: absolute; top: 0; bottom: 50%; left: 14.5px; width: 1px; background: color-mix(in oklab, var(--accent) 60%, transparent); } .ds-wire-dot { width: 6px; height: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); } .ds-wire-line { position: relative; flex: 1; min-width: 24px; height: 1px; overflow: hidden; background: color-mix(in oklab, var(--accent) 40%, transparent); } .ds-wire-pulse { position: absolute; top: 0; bottom: 0; left: 0; width: 25%; background: var(--accent); animation: ds-wire-pulse 1.1s linear infinite; } .ds-wire-host { font-family: var(--font-mono); font-size: 0.75rem; font-variant-ligatures: none; color: var(--foreground); } @keyframes ds-wire-pulse { from { transform: translateX(-100%); } to { transform: translateX(400%); } } @media (prefers-reduced-motion: reduce) { .ds-wire-pulse { animation: none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Direct Line",
+    "overview": "NEXA is a warm, quiet room with one wire running through it. The room is stone: near-black neutrals with a trace of warmth, separated by hairline seams rather than by shadow. The wire is the one precious thing in it, a thin line in the accent colour that leaves the composer and ends at the exact host a message will reach. Everything else stays calm so that this line can be read, because the product's promise is that nothing sits between the user and their provider.\n\nThe system is built for hours of use, so density is that of a working tool, not a showcase: 14px controls, 15px interface text, 16px reading text, and one colour held back for what matters. The landing page lives in the same world at a louder volume. It uses the same stone, the same accent and the same wire, with Funnel Display at scale and the wire drawn as the spine of the page.\n\nThe system refuses three things by name: blue as a base colour (rejected by the founder), the grey vendor chat clone, and the glowing AI gradient. Dark is the default, Light and System are full peers, and five user-selectable palettes change the material without changing any rule here.",
+    "keyCharacteristics": [
+      "Warm stone neutrals derived from one hue and one tint, so every palette reads as a single material.",
+      "One accent, reserved for the primary action, focus, selection, live state and the wire.",
+      "Hairline seams at rest; shadow only on things that truly float.",
+      "The wire: a literal, truthful route line naming the provider host.",
+      "Machine strings in JetBrains Mono, numbers in tabular figures.",
+      "Phones are a first-class layout: drawer, bottom sheets, 44px targets."
+    ],
+    "rules": [
+      {
+        "name": "The One Material Rule",
+        "body": "A palette is a hue, a tint and an accent. Never paste a new accent on existing neutrals; derive the neutrals from the same hue.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Blue Rule",
+        "body": "Blue is never a base colour: no palette hue, neutral tint or accent may be blue. The founder rejected it, and the shipped palette hues leave everything between the teal of the syntax colours (190) and violet (295) empty. Syntax colours are not base colours.",
+        "section": "colors"
+      },
+      {
+        "name": "The Precious Colour Rule",
+        "body": "The accent means act here, you are here, or this is live. It is never decoration, and never a fill for a large region.",
+        "section": "colors"
+      },
+      {
+        "name": "The Exact String Rule",
+        "body": "Hosts, URLs, keys, model identifiers and code are set in mono with ligatures off, because a ligature can make `://` misleading. Human language is never set in mono.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Counts, token totals, costs, file sizes and line numbers use tabular figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The Thumb Rule",
+        "body": "Below 768px every control reaches 44px, and fields use 16px text so iOS does not zoom. Hover styles are gated behind `(hover: hover)` so a tap never leaves a stuck state.",
+        "section": "layout"
+      },
+      {
+        "name": "The Seam Rule",
+        "body": "Things in the page plane are separated by a hairline, never a shadow. Shadow is for things that float.",
+        "section": "elevation"
+      },
+      {
+        "name": "The True Wire Rule",
+        "body": "The wire only ever shows the real route. Nothing is drawn on it unless it is really on the path, and it never becomes decoration detached from a route.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do take every colour from `src/styles/tokens.css`, so a surface follows all five palettes and both themes.",
+      "Do define a new palette as a hue, a tint and two accents, and add its hex to `src/lib/palettes.ts`.",
+      "Do keep the accent for action, focus, selection, live state and the wire.",
+      "Do separate regions in the page plane with 1px seams and small steps of lightness.",
+      "Do keep destructive actions outlined and apart until hover or keyboard focus.",
+      "Do show the real host on the wire, and draw the relay on it when the relay is on.",
+      "Do set hosts, URLs, keys and code in mono with ligatures off, and numbers in tabular figures.",
+      "Do bring every control to 44px below 768px, and turn floating panels into bottom sheets.",
+      "Do label anything illustrative with a plain caption such as \"Example conversation.\"",
+      "Do gate hover styles behind `(hover: hover)` and respect reduced motion."
+    ],
+    "donts": [
+      "Don't use blue as a palette hue, neutral tint or accent.",
+      "Don't let the interface drift into a neutral grey vendor chat clone; neutrals always carry the palette hue, Mono being the one deliberate exception.",
+      "Don't use a glowing AI gradient, or a gradient on any surface, text or accent. The neutral skeleton shimmer is the only gradient in the system.",
+      "Don't put a shadow on resting content in the page plane, or add a second shadow style.",
+      "Don't add uppercase tracked labels above headings. Headings stand alone, and wide tracking belongs to the wordmark.",
+      "Don't put a robot, brain or generic AI circle in the logo or any brand mark.",
+      "Don't add a stop on the wire that is not on the real route.",
+      "Don't fill a destructive button at rest.",
+      "Don't add a radius outside 6, 10 and 16px, apart from concentric inner corners and full rounds."
+    ]
+  }
+}

@@ -1,0 +1,442 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@fontsource-variable/hanken-grotesk/wght.css";
+@import "@fontsource-variable/funnel-display/wght.css";
+@import "@fontsource-variable/jetbrains-mono/wght.css";
+@import "../styles/tokens.css";
+@import "../styles/prose.css";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+/* Phones, and any screen driven by a finger, such as a tablet: controls grow to 44px. */
+@custom-variant touch {
+  @media (max-width: 47.98rem) {
+    @slot;
+  }
+  @media (pointer: coarse) {
+    @slot;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-deep: var(--background-deep);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-surface-raised: var(--surface-raised);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent: var(--on-accent);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-on-primary: var(--on-primary);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-code: var(--code-bg);
+
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+
+  --radius-sm: var(--radius-s);
+  --radius-md: var(--radius-m);
+  --radius-lg: var(--radius-l);
+
+  --shadow-float: var(--shadow-float);
+  --ease-out: var(--ease-out);
+}
+
+@layer base {
+  html {
+    overscroll-behavior: none;
+    font-size: calc(100% * var(--text-scale));
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--on-accent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  textarea:focus-visible,
+  input:focus-visible {
+    outline-offset: 0;
+  }
+
+  button,
+  [role="button"],
+  summary {
+    cursor: pointer;
+  }
+
+  /* Fires taps at once, with no wait for a possible double-tap. */
+  button,
+  a,
+  label,
+  summary,
+  [role="button"],
+  [role="option"],
+  [role="menuitem"] {
+    touch-action: manipulation;
+  }
+
+  /* Controls aren't content: a long press shouldn't select their label. */
+  button,
+  [role="button"],
+  [role="option"],
+  [role="menuitem"] {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+
+  input,
+  textarea,
+  select {
+    caret-color: var(--accent);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--faint);
+    opacity: 1;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+  }
+
+  dialog {
+    color: inherit;
+  }
+
+  dialog::backdrop {
+    background: var(--overlay);
+  }
+
+  /* Only Dialog opts in: the command palette opens hundreds of times a day, so it never moves. */
+  dialog.dialog-enter[open] {
+    transition:
+      opacity 200ms var(--ease-out),
+      transform 200ms var(--ease-out);
+
+    @starting-style {
+      opacity: 0;
+      transform: scale(0.97);
+    }
+  }
+
+  dialog.dialog-enter[open]::backdrop {
+    transition: opacity 200ms var(--ease-out);
+
+    @starting-style {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 39.98rem) {
+    dialog.dialog-enter[open] {
+      @starting-style {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+    }
+  }
+
+  /* iOS zooms into any focused field under 16px. */
+  @media (pointer: coarse) {
+    input,
+    textarea,
+    select {
+      font-size: 16px !important;
+    }
+  }
+}
+
+@layer components {
+  /* Ligatures make URLs and keys misleading, for example "://". */
+  .font-mono,
+  code,
+  pre {
+    font-variant-ligatures: none;
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* One orchestrated moment on page load. CSS keeps it smooth while the page hydrates. */
+  .rise {
+    animation: rise 620ms var(--ease-out) both;
+    animation-delay: calc(var(--i, 0) * 70ms);
+  }
+
+  .enter {
+    animation: enter 260ms var(--ease-out) both;
+  }
+
+  .launch-mark {
+    display: none;
+  }
+
+  html[data-launch] .launch-mark {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+    color: var(--accent);
+    animation: launch-out 240ms var(--ease-out) 1000ms forwards;
+  }
+
+  html[data-launch] .launch-mark path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: launch-draw 360ms var(--ease-out) forwards;
+  }
+
+  html[data-launch] .launch-mark path:nth-child(2) {
+    animation-delay: 220ms;
+  }
+
+  html[data-launch] .launch-mark path:nth-child(3) {
+    animation-delay: 440ms;
+  }
+
+  /* An image of an answer has no use for buttons. */
+  [data-capture] figcaption button {
+    display: none;
+  }
+
+  /* A message reached from the pinned bar glows once, so the eye finds it. */
+  [data-flash] > * {
+    animation: flash 1.4s var(--ease-out);
+    border-radius: 0.625rem;
+  }
+
+  /* Model avatars: a soft wash of the model's hue, with ink dark enough in light theme. */
+  .model-avatar {
+    background: color-mix(in oklch, oklch(0.72 0.12 var(--h)) 22%, transparent);
+    color: oklch(0.84 0.1 var(--h));
+  }
+
+  [data-theme="light"] .model-avatar {
+    color: oklch(0.42 0.12 var(--h));
+  }
+
+  /* Pressable feedback. Gated so taps don't leave a stuck hover. */
+  .press {
+    transition: transform 140ms var(--ease-out);
+  }
+
+  /* The sidebar's scrollbar stays out of sight until the list moves. */
+  .sidebar-nav {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+
+  .sidebar-nav::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .sidebar-nav::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .sidebar-nav::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 9999px;
+    transition: background-color 0.45s ease;
+  }
+
+  .sidebar-nav.is-scrolling {
+    scrollbar-color: color-mix(in srgb, var(--foreground) 14%, transparent) transparent;
+  }
+
+  .sidebar-nav.is-scrolling::-webkit-scrollbar-thumb {
+    background-color: color-mix(in srgb, var(--foreground) 14%, transparent);
+  }
+
+  .press:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+
+  .fade-in {
+    animation: fade-in 160ms var(--ease-out) both;
+  }
+
+  .pop-in {
+    animation: pop-in 150ms var(--ease-out) both;
+    transform-origin: var(--origin, top left);
+  }
+
+  .skeleton {
+    background: linear-gradient(100deg, var(--surface) 30%, var(--surface-hover) 50%, var(--surface) 70%);
+    background-size: 220% 100%;
+    border-radius: var(--radius-s);
+    animation: shimmer 1.4s linear infinite;
+  }
+
+  .caret-stream::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1.05em;
+    margin-left: 2px;
+    vertical-align: -0.16em;
+    background: var(--accent);
+    animation: caret 1s steps(2, jump-none) infinite;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(4px);
+  }
+}
+
+/* The launch mark: the N's three strokes draw in turn, then the screen lifts away. */
+@keyframes launch-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes launch-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes flash {
+  from {
+    background-color: var(--accent-soft);
+  }
+}
+
+/* A wizard step slides in from the side it came from. */
+@keyframes step-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+}
+
+@keyframes step-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+}
+
+/* The in-app entrance: seen at every new chat, so it is short and barely travels. */
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(-2px);
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 120% 0;
+  }
+  to {
+    background-position: -120% 0;
+  }
+}
+
+@keyframes caret {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.15;
+  }
+}
+
+/* The wire: a pulse travelling from the browser to the provider. */
+@keyframes wire-pulse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(400%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* A spinner is progress, not decoration. A frozen one reads as a hang. */
+  .animate-spin {
+    animation-duration: 1s !important;
+    animation-iteration-count: infinite !important;
+  }
+
+  .caret-stream::after {
+    opacity: 1;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+}
